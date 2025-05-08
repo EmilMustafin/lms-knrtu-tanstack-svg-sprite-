@@ -1,4 +1,4 @@
-import { BREAKPOINTS } from './src/shared/config/breakpoints';
+import { BREAKPOINTS } from './src/shared/config/g/breakpoints';
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const defaultTheme = require('tailwindcss/defaultTheme');
 
