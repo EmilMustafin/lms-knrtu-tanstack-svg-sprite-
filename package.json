@@ -115,14 +115,5 @@
     "node": "22",
     "pnpm": "9"
   },
-  "packageManager": "pnpm@9.15.4",
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": [
-      "prettier --write",
-      "eslint --report-unused-disable-directives --max-warnings 5"
-    ],
-    "src/**/*.{css,scss,html,md,json}": [
-      "prettier --write"
-    ]
-  }
+  "packageManager": "pnpm@9.15.4"
 }
