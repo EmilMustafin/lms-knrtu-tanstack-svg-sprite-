@@ -13,7 +13,7 @@ export const jsonApiInstance = async <T>(url: string, init?: RequestInit & { jso
   const token = localStorage.getItem('auth-token');
   if (token) {
     headers = {
-      Authorization: `Bearer ${token}`
+      Authorization: `Bearer ${token}`,
       ...headers,
     };
   }
