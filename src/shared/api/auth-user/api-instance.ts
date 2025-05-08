@@ -1,4 +1,4 @@
-const BASE_URL = 'https://rest.kstu.ru/restapi';
+const BASE_URL = 'https://rest.kstu.ru/restapi          ';
 
 export class ApiError extends Error {
   constructor(public response: Response) {
@@ -13,7 +13,7 @@ export const jsonApiInstance = async <T>(url: string, init?: RequestInit & { jso
   const token = localStorage.getItem('auth-token');
   if (token) {
     headers = {
-      Authorization: `Bearer ${token}`,
+      Authorization: `Bearer ${token}`
       ...headers,
     };
   }
