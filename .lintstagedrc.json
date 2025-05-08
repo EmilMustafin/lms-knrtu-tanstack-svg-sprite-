@@ -1,0 +1,4 @@
+{
+  "src/**/*.{js,jsx,ts,tsx}": ["pnpm run format", "pnpm run lint"],
+  "src/**/*.{css,scss,html,md,json}": ["pnpm run format"]
+}
