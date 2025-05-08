@@ -1,4 +1,4 @@
 {
-  "src/**/*.{js,jsx,ts,tsx}": ["prettier --write", "eslint --report-unused-disable-directives --max-warnings 5"],
-  "src/**/*.{css,scss,html,md,json}": ["prettier --write"]
+  "src/**/*.{js,jsx,ts,tsx}": ["pnpm run format", "pnpm run lint"],
+  "src/**/*.{css,scss,html,md,json}": ["pnpm run format"]
 }

@@ -1,10 +1,7 @@
-. "$(dirname "$0")/_/husky.sh"
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
 
-echo '🏗️ Running pre commit checks...'
-
-npm run commit:pre || (
-		echo '❌ You have a problem in your code. Run ⚙️ npm commit:pre to check errors, make changes and try ⚙️ npm commit:init again.';
-		false;
-)
+echo "🏗️ Running pre commit checks..."
+pnpm run commit:pre && pnpm run tsc:check
 
 echo '✨🚀🏄‍♂️🍻 No error found: running commitlint now...'
