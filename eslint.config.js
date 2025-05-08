@@ -36,7 +36,7 @@ export default tseslint.config(
   eslintPluginImportX.flatConfigs.recommended,
   eslintPluginImportX.flatConfigs.typescript,
   {
-    files: ['**/*.{js,jsx,ts,tsx}',"tailwind.config.js"],
+    files: ['**/*.{js,jsx,ts,tsx}', 'tailwind.config.js'],
     settings: {
       // 'import-x/extensions': allExtensions,
       'import-x/external-module-folders': ['node_modules', 'node_modules/@types'],
@@ -100,6 +100,8 @@ export default tseslint.config(
         },
       ],
       '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+      'no-trailing-spaces': 'error',
+      'no-multi-spaces': 'error',
     },
   },
   {

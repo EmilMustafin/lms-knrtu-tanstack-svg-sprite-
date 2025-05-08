@@ -1,4 +1,4 @@
-const BASE_URL = 'https://rest.kstu.ru/restapi          ';
+const BASE_URL = 'https://rest.kstu.ru/restapi';
 
 export class ApiError extends Error {
   constructor(public response: Response) {

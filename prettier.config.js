@@ -10,6 +10,8 @@ const prettierConfig = {
   semi: true,
   bracketSpacing: true,
   bracketSameLine: false,
+  endOfLine: 'auto',
+  htmlWhitespaceSensitivity: 'strict',
 };
 
 export default prettierConfig;
